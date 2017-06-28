@@ -1,0 +1,178 @@
+﻿@model Millionaire.WebUI.Models.GameViewModel
+@{
+    ViewBag.Title = "Game";
+    Layout="~/Views/Shared/_LayoutGamePage.cshtml";
+}
+<script src="~/Scripts/engine.js"></script>
+
+
+        
+<div>
+
+    <div class="prize">
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item text-center bg" id="p15">
+                    <img src="~/Images/diamond.png" />
+                    1000000
+                </li>
+                <li class="list-group-item text-center bg" id="p14">
+                    500000
+                </li>
+                <li class="list-group-item text-center bg" id="p13">
+                    250000
+                </li>
+                <li class="list-group-item text-center bg" id="p12">
+                    125000
+                </li>
+                <li class="list-group-item text-center bg" id="p11">
+                    64000
+                </li>
+                <li class="list-group-item text-center bg" id="p10">
+                    <img src="~/Images/diamond.png" />
+                    32000
+                </li>
+                <li class="list-group-item text-center bg" id="p9">
+                    16000
+                </li>
+                <li class="list-group-item text-center bg" id="p8">
+                    8000
+                </li>
+                <li class="list-group-item text-center bg" id="p7">
+                    4000
+                </li>
+                <li class="list-group-item text-center bg" id="p6">
+                    2000
+                </li>
+                <li class="list-group-item text-center bg" id="p5">
+                    <img src="~/Images/diamond.png" />
+                    1000
+                </li>
+                <li class="list-group-item text-center bg" id="p4">
+                    500
+                </li>
+                <li class="list-group-item text-center bg" id="p3">
+                    300
+                </li>
+                <li class="list-group-item text-center bg" id="p2">
+                    200
+                </li>
+                <li class="list-group-item text-center active bg" id="p1">
+                    100
+                </li>
+            </ul>
+
+            <input id="#take_money" class="btn btn-info btn-block" data-money="254" value="Забрать выигрыш" onclick="takeMoney();">
+        </div>
+    </div>
+    <div class="question_answer">
+
+        <div class="bg-question">
+            <p id="question"></p>
+        </div>
+        <div class="four_ans">
+            <div style="width: 100%; height: 1px; clear: both; opacity: 0;">.</div>
+
+            <div class="ans_1 answer_efect" id="answer_a">
+                <p id="a" class="answer">
+                    <span>A:</span>
+                </p>
+            </div>
+            <div class="ans_2 answer_efect" id="answer_b">
+                <p id="b" class="answer">
+                    <span>B:</span>
+                </p>
+            </div>
+
+            <div class="ans_3 answer_efect" id="answer_c">
+                <p id="c" class="answer">
+                    <span>C:</span>
+                </p>
+            </div>
+            <div class="ans_4 answer_efect" id="answer_d">
+                <p id="d" class="answer">
+                    <span>D:</span>
+                </p>
+            </div>
+
+            <div class="nextOrEnd nextOrEnd_efect" id="next_button">
+                <p id="next"></p>
+
+            </div>
+
+            <div id="questionId" value="0"></div>
+
+
+
+        </div>
+        
+        <div id="diagramAuditoryid" class="diagramAuditory"></div>
+        <div class="logo visible_logo_true">
+            <img src="~/Images/logo.png" class="logo" id="logo_image" />
+        </div>
+
+    </div>
+    <div class="user_help">
+
+        <ul class="ch-grid">
+            <li>
+                <div id="fifty_end"></div>
+                <div id="fifty" class="ch-item">
+                    <div class="ch-info-wrap">
+                        <div class="ch-info">
+                            <div id="fifty1" class="ch_img_1"></div>
+                            <div class="ch-info-back">
+                                <h3>Вы уверены?</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                
+                <div id="friend_end"></div>
+                <div id="friend" class="ch-item">
+                    <div class="ch-info-wrap">
+                        <div class="ch-info">
+                            <div id="friend1" class="ch_img_2"></div>
+                            <div class="ch-info-back">
+                                <h3>Вы уверены?</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div id="auditory_end"></div>
+                <div id="auditory" class="ch-item">
+                    <div class="ch-info-wrap">
+                        <div class="ch-info">
+                            <div id="auditory1" class="ch_img_3"></div>
+                            <div class="ch-info-back">
+                                <h3>Вы уверены?</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <div class="overlay"></div>
+
+        <div id="trailer">
+            <video id="video" autoplay="autoplay" loop="loop" preload="auto">
+                <source src="~/Video/Sunset-Lapse.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
