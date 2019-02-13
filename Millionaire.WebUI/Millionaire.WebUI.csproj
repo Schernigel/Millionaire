@@ -163,6 +163,8 @@
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Models\DEV_CLASS2.cs" />
     <Compile Include="Models\GameViewModel.cs" />
+    <Compile Include="Models\JustTestClass.cs" />
+    <Compile Include="Models\JusttestClass2.cs" />
     <Compile Include="Models\UserResultsViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
